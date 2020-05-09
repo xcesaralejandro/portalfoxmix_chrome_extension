@@ -1,0 +1,27 @@
+.main-fame{
+    width: 400px;
+    height: auto;
+    padding: 10px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    padding: 3px;
+}
+
+.option{
+    border : 1px solid transparent;
+}
+
+.option-selected{
+    border-color: red;
+}
+
+.text-center{
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+{
+    "name" : "PFM Download",
+    "description" : "Descarga un pack saltando la publicidad",
+    "version" : "3.0",
+    "manifest_version" : 2,
+    "icons" :{
+        "128" : "img/128.png"
+    },
+    "browser_action" : {
+        "default_title" : "PFM Pack Download", 
+        "default_icon" : "img/download.png",
+        "default_popup" : "popup.html"
+    }, 
+    "content_scripts": [{
+          "matches": ["https://www.portalfoxmix.cl/*","http://www.portalfoxmix.cl/*"],
+          "js": ["src/jquery.js", "src/main.js"]
+    }],
+    "background" : {
+        "scripts" : ["src/jquery.js","src/background.js"]
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "webNavigation",
+        "http://*/*",
+        "https://*/*"
+    ]
+}
